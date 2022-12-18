@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lâmpada</title>
+    <style>
+     
+#main {
+
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#container {
+
+display: flex;
+flex-direction: column;
+
+}
+
+#container img {
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+
+}
+    
+#container button {
+    
+background-color: #0b20c6;
+border-radius: 20%;
+color: white;
+text-align: center;
+text-decoration-line: underline;    
+height: auto;
+width: auto;    
+margin-top: 5%;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+
+}
+
+.lightoff {
+    background-color: black;
+    transition: background-color 1.5 ease-out;
+    }
+
+.lighton {
+    background-color: yellow;
+    transition: background-color 1.5s ease-out;    
+    }
+
+
+
+
+</style>
+    
+</head>
+  
+  <body id="main" class="lightoff">
+    <div id="container">
+      <img
+        id="myImage"
+        src="https://i.postimg.cc/KjK1wL3c/bulb-off.png"
+        alt=""/>
+      <button id="switch">
+        Ligar
+      </button>
+      
+    </div>
+    
+  </body>
+  <script src="ex.lampada.js"></script>
+</html>
